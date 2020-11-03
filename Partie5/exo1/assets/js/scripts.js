@@ -1,13 +1,17 @@
-console.log(password)
+let element1 = document.getElementById("password");
+let element2 = document.getElementById("passwordConfirm");
 
-function verif() {
+element1.addEventListener('blur', testPWD , true)
+element2.addEventListener('blur', testPWD , true)
+
+function testPWD() {
     let password = document.getElementById('password').value;
     let passwordConfirm = document.getElementById('passwordConfirm').value;
     if (password === passwordConfirm) {
-        document.getElementById("password").style.borderColor = "green";
-        document.getElementById("passwordConfirm").style.borderColor = "green";
+        element1.style.borderColor = "green";
+       element2.style.borderColor = "green";
     } else {
-        document.getElementById("password").style.borderColor = "red";
-        document.getElementById("passwordConfirm").style.borderColor = "red";
+        element1.style.borderColor = "red";
+       element2.style.borderColor = "red";
     }
 }

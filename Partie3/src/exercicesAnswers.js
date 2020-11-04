@@ -77,7 +77,7 @@ let displayAbsoluteValues = function (numbersArray) {
 //Exercice 16 : Calculer la surface d'un cercle en fonction de son rayon. L'arondir à l'entier le plus proche.
 let calculateArea = function (radius) {
   console.log(radius)
-  return Math.round(Math.PI * (radius*radius));
+  return Math.round(Math.PI * Math.pow(radius,2));
 }
 
 //Exercice 17 : Calculer l'hypothènuse d\'un triangle rectangle. Arrondir à l'entier inférieur.

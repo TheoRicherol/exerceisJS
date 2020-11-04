@@ -30,7 +30,7 @@ let addAtTheEnd = function (array) {
 
 //Exercice 6 : Ajouter html et css au début du tableau languages.', function() {
 let addAtFirst = function (array) {
-  array.splice(0,0 ,'html' , 'css');
+  array.unshift('html' , 'css');
   return array;
 }
 
@@ -75,7 +75,7 @@ let returnSentence = function (array) {
 
 //Exercice 12 : Transformer la variable string en tableau.', function() {
 let returnArray = function (string) {
-  let array = string.split([',']);
+  let array = string.split(',');
   return array;
 }
 

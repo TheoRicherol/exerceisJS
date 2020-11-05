@@ -1,18 +1,16 @@
-let element1 = document.getElementById('password');
-let element2 = document.getElementById('passwordConfirm');
+let password = document.getElementById('password');
+let passwordConfirm = document.getElementById('passwordConfirm');
+let buttonSubmit = document.getElementById('submitButton');
+// element1.addEventListener('blur', testPWD , true)
+// element2.addEventListener('blur', testPWD , true)
 
-element1.addEventListener('blur', testPWD , true)
-element2.addEventListener('blur', testPWD , true)
-
-function testPWD() {
-    let password = document.getElementById('password').value;
-    let passwordConfirm = document.getElementById('passwordConfirm').value;
-    console.log(password)
-    if (password === passwordConfirm) {
-        element1.classList.add('borderGreen');
-        element2.classList.add('borderGreen');
+buttonSubmit.onclick = function(e) {
+    e.preventDefault;
+    if (password.value === passwordConfirm.value) {
+        password.classList.toggle('borderGreen');
+        passwordConfirm.classList.toggle('borderGreen');
     } else {
-        element1.classList.add('borderRed');
-        element2.classList.add('borderRed');
+        password.classList.toggle('borderRed');
+        pass.classList.toggle('borderRed');
     }
 };

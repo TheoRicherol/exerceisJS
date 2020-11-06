@@ -6,4 +6,7 @@ while(secondNumber < 250){
     secondNumber = result;
     let calcResult =  document.createElement('p');
     document.body.appendChild(calcResult).innerHTML = secondNumber;
+    if(secondNumber > 250){
+        document.body.removeChild(calcResult)
+    }
 }

@@ -6,17 +6,13 @@ window.onscroll = textGrow;
 
 
 function textGrow() {
-    let growTextCalc = window.scrollY * .5;
-
-    if (growTextCalc <= 20) {
-        growTextCalc = 20;
+    let growTextCalc = window.scrollY * .01;
+    if (growTextCalc <= 1) {
+        growTextCalc = 1;
     }
-    else if(growTextCalc >= 300) {
-        growTextCalc = 300;
+    else if(growTextCalc >= 5) {
+        growTextCalc = 5;
     }
-    console.log(growTextCalc);
-    let fontGrow = growTextCalc + '%';
-    console.log(fontGrow);
-
+    let fontGrow = growTextCalc + 'em';
     text.style.fontSize = fontGrow;
 }

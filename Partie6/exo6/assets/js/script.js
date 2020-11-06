@@ -6,4 +6,7 @@ while(firstNumber > 1){
     firstNumber = result;
     let calcResult =  document.createElement('p');
     document.body.appendChild(calcResult).innerHTML = firstNumber;
+    if(firstNumber < 1){
+        document.body.removeChild(calcResult)
+    }
 }

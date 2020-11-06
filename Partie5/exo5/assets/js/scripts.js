@@ -51,3 +51,24 @@ function goBold() {
 function goItal() {
     ex.classList.toggle('ital');
 }
+
+
+
+if (ex.classList == 'blue' || ex.classList == 'purple'){
+    ex.classList.remove('blue');
+    ex.classList.remove('purple');
+    ex.classList.toggle('pink');
+    console.log('ok')
+}
+else if (ex.classList == 'pink' || ex.classList == 'purple'){
+    ex.classList.remove('pink');
+    ex.classList.remove('purple');
+    ex.classList.toggle('blue');
+    console.log('ok')
+}
+else if(ex.classList == 'blue' || ex.classList == 'pink'){
+    ex.classList.remove('blue');
+    ex.classList.remove('pink');
+    ex.classList.toggle('purple');
+    console.log('ok')
+}

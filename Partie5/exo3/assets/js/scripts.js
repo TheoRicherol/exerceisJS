@@ -1,5 +1,5 @@
 //Config Name
-let nameTest = /(\D\S)+/;
+let nameTest = /^(\D\S)+$/;
 let nameInput = document.getElementById('name');
 
 nameInput.addEventListener("blur", nameVerif , true);
@@ -35,14 +35,16 @@ function mailVerif() {
 }
 
 //Config Age
+let ageTest = /^([0-1][0-2]\d{1}$|\d{0,2})$/
 let ageInput = document.getElementById('age');
+
 
 ageInput.addEventListener("blur", ageVerif);
 
 function ageVerif() {
     let age = document.getElementById('age').value;
     console.log(age);
-    if (age >= 1 && age <= 130) {
+    if (ageTest.test(ageInput.value)==true) {
         ageInput.classList.add('borderGreen');
     } else {
         ageInput.classList.remove('borderGreen');

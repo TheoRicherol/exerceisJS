@@ -1,0 +1,17 @@
+#scrollTop{
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-right : 12px solid transparent;
+    border-bottom : 23px solid black;
+    border-left : 13px solid transparent;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    transition: all  1s ease;
+   }
+   
+   #scrollTop:hover{
+       bottom: 3%;
+
+   }

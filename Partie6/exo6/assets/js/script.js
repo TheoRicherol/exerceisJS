@@ -1,5 +1,6 @@
 let firstNumber = 10;
-let secondNumber = 2;
+// Constatnte pour ce que ne bougera jamais
+const secondNumber = 2;
 let result = 0;
 while(firstNumber > 1){
     let result = firstNumber / secondNumber;

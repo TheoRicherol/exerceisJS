@@ -8,4 +8,3 @@ submitButton.onclick = function(evt){
     let result = firstNumber * secondNumber;
     document.getElementById('result').appendChild(resultDisplay).innerHTML = result;
 }
-   

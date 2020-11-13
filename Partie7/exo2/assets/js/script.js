@@ -22,6 +22,7 @@ color.onclick = function (e) {
 
 enlarge.onclick = function() {
     fS++;
+    console.log(fS)
 let i;
 for (i = 0; i < paragraphs.length; i++) {
     paragraphs[i].style.fontSize = fS + "px";
